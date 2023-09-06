@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy UI</title>
+</head>
+<body>
+    <h1>List of Cricket GOATs</h1>
+    <ul id="list">
+        <li>Virat Kohli</li>
+        <li>Rohit Sharma</li>
+    </ul>
+    <button onclick="onClick()">
+        Click to show the real GOAT
+    </button>
+</body>
+<script>
+    function onClick() {
+        const listContainer = document.getElementById("list")
+        const newListItem = document.createElement("li")
+        newListItem.textContent = "Sachin Tendulkar"
+        listContainer.prepend(newListItem)
+    }
+</script>
+</html>
